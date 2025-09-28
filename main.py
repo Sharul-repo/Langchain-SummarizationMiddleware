@@ -40,7 +40,6 @@ def main():
             print("👋 Goodbye!")
             break
 
-        # ✅ Send only new input — let the agent fetch history internally
         result = agent.invoke({"messages": [{"role": "user", "content": user_input}]}, config=config)
 
         print(result)
